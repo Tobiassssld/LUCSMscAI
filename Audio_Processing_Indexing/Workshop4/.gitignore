@@ -1,0 +1,33 @@
+# Virtual environment
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Audio output and plots
+librosa_gallery/
+*.wav
+*.mp3
+*.ogg
+*.png
+*.jpg
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# Jupyter / IPython
+.ipynb_checkpoints/
+*.ipynb
+
+# IDE project settings
+.idea/
+.vscode/

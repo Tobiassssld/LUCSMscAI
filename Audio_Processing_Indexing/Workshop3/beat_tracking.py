@@ -1,29 +1,24 @@
-# beat_tracking.py
-# Assignment 1 – BPM Estimation
-# Author: [Your Name]
-
-import librosa
 import librosa.display
 import matplotlib.pyplot as plt
 import numpy as np
 
-# === 1. Load audio ===
+#Load audio
 audio_path = "librosa_gallery/examples/audio/Kevin_MacLeod_-_Vibe_Ace.mp3"
 y, sr = librosa.load(audio_path)
 
-# === 2. Beat tracking ===
+#Beat tracking
 tempo, beat_frames = librosa.beat.beat_track(y=y, sr=sr)
 
-# Handle numpy array return
+#Handle numpy array return
 if isinstance(tempo, (list, tuple, np.ndarray)):
     tempo = tempo[0]
 
 print(f"Estimated tempo: {tempo:.2f} BPM")
 
-# === 3. Convert frame indices to time (seconds) ===
+#Convert frame indices to time (seconds) ===
 beat_times = librosa.frames_to_time(beat_frames, sr=sr)
 
-# === 4. Plot waveform and beats ===
+#Plot waveform and beats
 plt.figure(figsize=(10, 4))
 librosa.display.waveshow(y, sr=sr, alpha=0.6)
 plt.vlines(beat_times, -1, 1, color="r", alpha=0.8, linestyle='--', label='Beats')
