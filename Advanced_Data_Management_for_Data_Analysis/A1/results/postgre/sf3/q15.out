@@ -1,0 +1,4 @@
+CREATE VIEW
+s_suppkey|s_name|s_address|s_phone|total_revenue
+8932|Supplier#000008932       |kfP7XX1vCDj0O5ptFfl17Aj4NpMOM8ECGi|32-414-595-9654|1981886.0714
+DROP VIEW
