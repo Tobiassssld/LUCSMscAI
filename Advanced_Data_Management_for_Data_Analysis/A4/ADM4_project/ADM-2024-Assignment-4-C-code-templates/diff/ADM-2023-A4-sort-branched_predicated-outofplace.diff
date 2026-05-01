@@ -1,0 +1,30 @@
+--- ADM-2023-A4-sort-branched-outofplace.c	2024-11-12 00:00:09.000000000 +0100
++++ ADM-2023-A4-sort-predicated-outofplace.c	2024-11-12 00:00:09.000000000 +0100
+@@ -5,15 +5,15 @@
+ #include <sys/time.h>
+ #include <limits.h>
+ 
+-// TODO: YOUR "branched" out-of-place sort implementation
++// TODO: YOUR "predicated" out-of-place sort implementation
+ // NOTE: Depending on your choice of sort algorithm / implementation,
+ //       you only need to use/implement *either* this "out-of-place"
+ //       *or* the alternative "in-place" variant, but *not* both.
+-void sort_branched_outofplace( int N , int *input_array , int *result_array ) {
++void sort_predicated_outofplace( int N , int *input_array , int *result_array ) {
+ 
+ 	// TODO:
+ 	// replace this with your
+-	// "branched" out-of-place sort implementation
++	// "predicated" (branch-free) out-of-place sort implementation
+ 
+ 	for ( int i = 0 , j = N - 1 ; i < N ; i++ , j-- ) {
+ 		result_array[ i ] = input_array[ j ];
+@@ -162,7 +162,7 @@
+ 	// sort input array out-of-place (into result array);
+ 	// measure the time it takes
+ 	gettimeofday( &before , NULL );
+-	sort_branched_outofplace( N , input_array , result_array );
++	sort_predicated_outofplace( N , input_array , result_array );
+ 	gettimeofday( &after , NULL );
+ 
+ 	// Check whether result is indeed sorted;

@@ -1,0 +1,7 @@
+- Complaint: https://data.cityofnewyork.us/Public-Safety/NYPD-Complaint-Data-Historic/qgea-i56i/about_data
+- SAS: https://www.nyc.gov/site/nypd/stats/reports-analysis/stopfrisk.page?utm_source=chatgpt.com 
+- 311: https://data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2010-to-Present/erm2-nwe9/about_data
+- Weather: https://www.kaggle.com/datasets/danbraswell/new-york-city-weather-18692022?resource=download
+- POI/checkin: https://sites.google.com/site/yangdingqi/home/foursquare-dataset?utm_source=chatgpt.com
+- Taxi: https://databank.illinois.edu/datasets/IDB-9610843
+- Shapefile: https://www.nyc.gov/content/planning/pages/resources/datasets/borough-boundaries?utm_source=chatgpt.com

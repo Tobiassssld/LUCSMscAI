@@ -1,0 +1,4 @@
+N = 10000
+input_data_file_location = './data/l_discount-int8.csv'
+load data:       559 usec ; data_array[ 0 ] =          4 , data_array[ 5000 ] =          2 , data_array[ 9999 ] =          7
+sort data:     50930 usec ; data_array[ 0 ] =          0 , data_array[ 5000 ] =          5 , data_array[ 9999 ] =         10

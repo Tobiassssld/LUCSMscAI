@@ -1,0 +1,7 @@
+wbdata
+geopandas
+pysal
+esda
+libpysal
+matplotlib
+pandas
